@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-ddou
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: var_name
+          value: test
+        image: quay.io/bootstrap/integration-e2e-tenant/integ-app-owvh/devfile-sample-python-basic-ddou@sha256:2724e1b8872ec6c4b9a8bd89d17c322d022aaf742be76258f7f036a0f1bc75e2
+        name: my-python
+        resources: {}
+status: {}
